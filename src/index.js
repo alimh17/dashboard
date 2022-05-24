@@ -1,7 +1,10 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
+import 'flowbite';
 
 import App from './App'
+import '@splidejs/react-splide/css';
+import './index.css'
 
 const container = document.getElementById("root")
 const root = createRoot(container)

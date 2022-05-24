@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root,
+#root,
+#doc_root {
+  --dark-primary: #393e46;
+  --dark-primary-next: #232931;
+  --dark-text: #eeeeee;
+  --dark-text-next: #4ecca3;
+}
