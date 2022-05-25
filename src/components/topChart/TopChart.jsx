@@ -1,17 +1,17 @@
 import React from "react";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { AiFillPlusCircle } from "react-icons/ai";
-import { trackList } from "../../data/trackList";
+import { Topchart } from "../../data/TopCahrt";
 
 const TopChart = () => {
   return (
     <section className="w-2/3 flex flex-col  ">
       <h2 className="text-3xl p-2 text-dark_text">TopChart</h2>
       <ul className="flex flex-col container h-96">
-        {trackList.map((item, index) => (
+        {Topchart.map((item, index) => (
           <li
             key={index}
-            className="group flex justify-between h-28 w-full p-2 rounded-lg hover:bg-dark_text_next transition-all duration-200 ease-in"
+            className="group flex justify-between h-28 w-full p-2 rounded-lg hover:bg-dark_text_next transition-all duration-200 ease-in cursor-pointer"
           >
             <div className="w-2/3 flex">
               <img alt="track" src={item.Cover} className=" rounded-lg" />
